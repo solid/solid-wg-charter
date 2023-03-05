@@ -1,6 +1,6 @@
 # Solid Working Group Charter
 
-This repository contains the proposed [charter](charter/) for the Solid Working Group.
+This repository contains the [proposed charter](https://solid.github.io/solid-wg-charter/charter/) for the Solid Working Group.
 
 ## Contributing
 
