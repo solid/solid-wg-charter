@@ -8,7 +8,7 @@ Use the standard fork, branch, and pull request workflow to propose changes
 to the specification. Please make branch names informative (e.g. by including
 the issue or bug number).
 
-Editorial changes that improve the readability of the spec or correct
+Editorial changes that improve the readability of the charter or correct
 spelling or grammatical mistakes are welcome.
 
 Please read [CONTRIBUTING](CONTRIBUTING.md) about licensing contributions.
