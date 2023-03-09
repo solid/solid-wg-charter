@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 
     <title>W3C Solid Working Group Charter DRAFT-BR-2023-01-23</title>
@@ -9,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="pubrules-style.css">
     <link rel="stylesheet" type="text/css" href="charter-style.css">
     <style type="text/css">
+        main {
+            max-width: 60em;
+            margin: 0 auto;
+        }
+
         .warning {
             box-shadow: 10px 5px 3px 0px gray;
             border-top-width: thin;
@@ -137,18 +141,18 @@
           </p>
 
         <p class="mission">
-            The <strong>mission</strong> of the <a href="">Solid Working Group (LINK TBD)</a> is to standardize the Solid Protocol and its use of associated data interoperability and authentication schemes. This effort will culminate in open standards that can be used by developers of servers and applications to continue to build a rich ecosystem that returns control of data back to users.
+            The <strong>mission</strong> of the <a class=todo href="">Solid Working Group (LINK TBD)</a> is to standardize the Solid Protocol and its use of associated data interoperability and authentication schemes. This effort will culminate in open standards that can be used by developers of servers and applications to continue to build a rich ecosystem that returns control of data back to users.
         </p>
 
         <div class="noprint">
             <p class="join">
-                <a href="">Join the Solid Working Group (LINK TBD).</a>
+                <a class=todo href="">Join the Solid Working Group (LINK TBD).</a>
             </p>
         </div>
 
         <section id="details">
             <table class="summary-table">
-                <tbody><tr id="Duration">
+                <tbody><tr>
                     <th>
                         Start date
                     </th>
@@ -156,7 +160,7 @@
                         DD Month YYYY
                     </td>
                 </tr>
-                <tr id="Duration">
+                <tr>
                     <th>
                         End date
                     </th>
@@ -262,7 +266,7 @@ more than 3 per year.
                         The group will add a section detailing any known security or privacy implications for implementers, Web authors, and end users.
                     </li>
                     <li>
-                        The group will maintain and advance a <a href="">test suite (LINK TBD)</a>, which, among other goals, will enable interoperability testing.
+                        The group will maintain and advance a <a class=todo href="">test suite (LINK TBD)</a>, which, among other goals, will enable interoperability testing.
                     </li>
                 </ul>
             </div>
@@ -274,7 +278,7 @@ more than 3 per year.
             </h2>
             <p>
                 More detailed milestones and updated publication schedules are available on the
-                <a href="">group publication status page (LINK TBD)</a>.
+                <a class=todo href="">group publication status page (LINK TBD)</a>.
             </p>
 
             <div id="normative">
@@ -285,7 +289,7 @@ more than 3 per year.
                     The Solid Working Group will deliver the following W3C normative specifications:
                 </p>
                 <dl>
-                    <dt id="syntax" class="spec">Solid Protocol v1.0</dt>
+                    <dt id="protocol" class="spec">Solid Protocol v1.0</dt>
                     <dd>
                         <p>
                             The Solid Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way. An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralised Web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access control policies, and use preferred applications and services to achieve them.
@@ -295,6 +299,7 @@ more than 3 per year.
                         </p>
                         <p>
                             The Solid specification may include protocol details for integration with the following:
+                        </p>
                             <ol>
                                 <li>
                                     <a href="https://openid.net/connect/">OpenID Connect</a>
@@ -311,7 +316,7 @@ more than 3 per year.
                                 <li>
                                     Authorization mechanisms such as <a href="https://solidproject.org/TR/wac">Web Access Control</a> and <a href="https://solidproject.org/TR/acp">Access Control Policy</a>
                                 </li>
-                        </p>
+                            </ol>
                     </dd>
                 </dl>
 
@@ -331,7 +336,7 @@ more than 3 per year.
                     Other non-normative documents may be created such as:
                 </p>
                 <dl>
-                    <dt id="syntax" class="spec">Test Suite and Implementation Report</dt>
+                    <dt id="test-suite" class="spec">Test Suite and Implementation Report</dt>
                     <dd>
                         <p>
                             The Working Group will develop a test suite and implementation report to test and document conformance levels achieved by implementors.
@@ -341,16 +346,16 @@ more than 3 per year.
             </div>
 
             <div id="timeline">
-                <h3>Timeline (TBD)</h3>
+                <h3>Timeline <i class=issue>(TBD)</i></h3>
 
                 <table class="roadmap">
-                    <tfoot>
+                    <thead>
                         <tr>
                             <td colspan="5" rowspan="1">
                                 Note: The group will document significant changes from this initial schedule on the group home page.
                             </td>
                         </tr>
-                    </tfoot>
+                    </thead>
                     <tbody>
                         <tr>
                             <th rowspan="1" colspan="1">Specification</th>
@@ -372,7 +377,7 @@ more than 3 per year.
                                 Solid Protocol
                             </th>
                             <td class="WD1" rowspan="1" colspan="3">
-                                Month YYYY
+                                <i class=todo>Month YYYY</i>
                             </td>
                         </tr>
                     </tbody>
@@ -487,7 +492,7 @@ open to public participation, however.
             <p>
                 Information about the group (including details about 
 deliverables, issues, actions, status, participants, and meetings) will 
-be available from the <a href="">Solid Working Group home page (LINK TBD).</a>
+be available from the <a class=todo href="">Solid Working Group home page (LINK TBD).</a>
             </p>
             <p>
                 Most Working Group 
@@ -495,12 +500,12 @@ teleconferences will focus on discussion of particular specifications,
 and will be conducted on an as-needed basis.
             </p>
             <p>
-                This group primarily conducts its technical work on the public mailing list <a id="public-name" href="mailto:public-solid-wg@w3.org">public-solid-wg@w3.org (LINK TBD)</a> ( <a href="https://lists.w3.org/Archives/Public/public-solid-wg/">archive (LINK TBD)</a>) or on <a id="public-github" href="https://github.com/w3c/solid-wg/">GitHub issues (LINK TBD)</a>
+                This group primarily conducts its technical work on the public mailing list <a class="todo" id="public-name" href="mailto:public-solid-wg@w3.org">public-solid-wg@w3.org (LINK TBD)</a> ( <a class="todo" href="https://lists.w3.org/Archives/Public/public-solid-wg/">archive (LINK TBD)</a>) or on <a class="todo" id="public-github" href="https://github.com/w3c/solid-wg/">GitHub issues (LINK TBD)</a>
  (and specification-specific GitHub repositories and issue trackers). 
 The public is invited to review, discuss and contribute to this work.
             </p>
             <p>
-                The group will publish minutes for each teleconference at <a href="https://github.com/w3c/solid-wg/Meeting/Minutes/">https://github.com/w3c/solid-wg/Meeting/Minutes/ (LINK TBD)</a>.
+                The group will publish minutes for each teleconference at <a class="todo" href="https://github.com/w3c/solid-wg/Meeting/Minutes/">https://github.com/w3c/solid-wg/Meeting/Minutes/ (LINK TBD)</a>.
             </p>
         </section>
 
@@ -597,9 +602,9 @@ Charter History
               </tr>
               <tr>
                 <th> <a href="https://www.w3.org/2019/08/did-wg-charter.html">Initial Charter</a> </th>
-                <td> <i>Month YYYY</i> </td>
-                <td> <i>Month YYYY</i> </td>
-                <td> <i>none</i> </td>
+                <td> <i class=todo>Month YYYY</i> </td>
+                <td> <i class=todo>Month YYYY</i> </td>
+                <td> <i class=todo>none</i> </td>
               </tr>
     </tbody>
         </table>
@@ -611,7 +616,7 @@ Charter History
 
     <footer>
         <address>
-            <a href="mailto:???@w3.org">??? (LINK TBD)</a>
+            <a class="issue" href="mailto:???@w3.org">??? (LINK TBD)</a>
       </address>
 
         <p class="copyright">
