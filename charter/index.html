@@ -1,304 +1,247 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
-    <meta charset="utf-8">
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
 
     <title>PROPOSED Solid Working Group Charter</title>
 
-    <link rel="stylesheet" href="w3cdoc.css" type="text/css" media="screen">
-    <link rel="stylesheet" type="text/css" href="pubrules-style.css">
-    <link rel="stylesheet" type="text/css" href="charter-style.css">
-    <style type="text/css">
-        main {
-            max-width: 60em;
-            margin: 0 auto;
-        }
+    <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://www.w3.org/2006/02/charter-style.css"/>
+    <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
 
-        .warning {
-            box-shadow: 10px 5px 3px 0px gray;
-            border-top-width: thin;
-            border-right-width: thin;
-            border-bottom-width: thin;
-            border-left-width: thin;
-            border-top-style: solid;
-            border-right-style: solid;
-            border-bottom-style: solid;
-            border-left-style: solid;
-            border-radius: 3px;
-            width: 80%;
-            padding-top: 0.5em;
-            padding-right: 0.5em;
-            padding-bottom: 0.5em;
-            padding-left: 0.5em;
-        }
+      ul#navbar {
+        font-size: small;
+      }
 
-        .warning h1 {
-            font-size: 120%;
-            font-style: italic;
-            font-weight: bold;
-            text-align: center;
-        }
+      dt.spec {
+        font-weight: bold;
+      }
 
-        .warning p {
-            font-size: 110%;
-        }
+      dt.spec new {
+        background: yellow;
+      }
 
-        ul#navbar {
-            font-size: small;
-        }
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
 
-        dt.spec {
-            font-weight: bold;
-        }
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
 
-        dt.spec new {
-            background: yellow;
-        }
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
 
-        ul.out-of-scope>li {
-            font-weight: bold;
-        }
+      .todo {
+        color: #900;
+      }
 
-        ul.out-of-scope>li>ul>li {
-            font-weight: normal;
-        }
-
-        .issue {
-            background: cornsilk;
-            font-style: italic;
-        }
-
-        .todo {
-            color: #900;
-            background-color: #FFC !important;
-            font-style: italic;
-        }
-
-        footer {
-            font-size: small;
-        }
-
-        body {
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 100' width='100%' height='50%' opacity='.06'> <g transform='translate(73,45) rotate(-40)'> <rect fill='none' stroke='red' stroke-width='2' width='120' x='-60' y='3' height='20' rx='10' ry='10'/> <text x='0' y='20' font-family='sans-serif' font-size='18' fill='red' text-anchor='middle'>Draft</text> </g> </svg>");
-            background-position: top center;
-            background-repeat: repeat;
-        }
-
-        q {
-            background-color: initial;
-        }
+      footer {
+        font-size: small;
+      }
+      body {
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 100' width='100%' height='50%' opacity='.06'> <g transform='translate(73,45) rotate(-40)'> <rect fill='none' stroke='red' stroke-width='2' width='120' x='-60' y='3' height='20' rx='10' ry='10'/> <text x='0' y='20' font-family='sans-serif' font-size='18' fill='red' text-anchor='middle'>Draft</text> </g> </svg>");
+        background-position: top center;
+        background-repeat: repeat;
+     }
+     q {
+       background-color: inherit;
+       font-family: inherit;
+       font-style: inherit;
+     }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <header id="header">
-        <aside>
-            <ul id="navbar">
-                <li><a href="#scope">Scope</a></li>
-                <li><a href="#deliverables">Deliverables</a></li>
-                <li><a href="#coordination">Coordination</a></li>
-                <li><a href="#participation">Participation</a></li>
-                <li><a href="#communication">Communication</a></li>
-                <li><a href="#decisions">Decision Policy</a></li>
-                <li><a href="#patentpolicy">Patent Policy</a></li>
-                <li><a href="#licensing">Licensing</a></li>
-                <li><a href="#about">About this Charter</a></li>
-            </ul>
-        </aside>
-        <p>
-            <a href="https://www.w3.org/"><img alt="W3C" src="w3c_home.svg" width="72" height="48"></a>
-        </p>
+      <aside>
+        <ul id="navbar">
+          <li><a href="#background">Background</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#deliverables">Deliverables</a></li>
+		  <li><a href="#success-criteria">Success Criteria</a></li>
+          <li><a href="#coordination">Coordination</a></li>
+          <li><a href="#participation">Participation</a></li>
+          <li><a href="#communication">Communication</a></li>
+          <li><a href="#decisions">Decision Policy</a></li>
+          <li><a href="#patentpolicy">Patent Policy</a></li>
+          <li><a href="#licensing">Licensing</a></li>
+          <li><a href="#about">About this Charter</a></li>
+        </ul>
+      </aside>
+      <p>
+        <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"/></a>
+      </p>
     </header>
 
 
     <main>
-        <h1 id="title">PROPOSED Solid Working Group Charter</h1>
+      <h1 id="title">PROPOSED Solid Working Group Charter</h1>
+      <!-- delete PROPOSED after AC review completed -->
 
-        <div style="border: 1px solid darkred">
-            <p><strong>DRAFT</strong></p>
-            <p>This is a <em>draft</em> text, under development by the community. The goal is to, eventually, submit this draft charter proposal to an official W3C AC review.</p>
-            <p>Any text rendered like <span class=issue>this</span> refers to content that must be finalized before the charter is sent to AC review.</p>
-            <p>Any text rendered like <span class=todo>this</span> refers to content that must be updated when the final charter is published at the latest (e.g., adjusting hyperlinks).</p>
-        </div>
+      <div style="border: 1px solid darkred">
+        <p><strong>DRAFT</strong></p>
+        <p>This is a <em>draft</em> text, under development by the community. The goal is to, eventually, submit this draft charter proposal to an official W3C AC review.</p>
+        <p>Any text rendered like <span class="issue">this</span> refers to content that must be finalized before the charter is sent to AC review.</p>
+        <p>Any text rendered like <span class="todo">this</span> refers to content that must be updated when the final charter is published at the latest (e.g., adjusting hyperlinks).</p>
+      </div>
 
-        <p>
-            Cloud services in use on the Web today (2023) often require users to store their data and place control over that data at a third-party cloud provider. Solid adds to existing Web standards to enable user control: <q cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">to realise a space where individuals can maintain their autonomy, control their data and privacy, and choose applications and services to fulfil their needs.</q> Solid defines the notion of Pods, in which users place their own data and control access to that data, and a suite of interoperable protocols for managing Pods, applications that use pods, and interactions with existing protocols for authentication.
+      <p class="mission">The <strong>mission</strong> of the <a class="todo" href="">Solid Working Group (LINK TBD)</a> is to standardize the <cite><a href="https://solidproject.org/TR/protocol">Solid Protocol</a></cite> and its use of associated data interoperability and authentication schemes. This effort will culminate in open standards that can be used by developers of servers and applications to continue to build a rich ecosystem that returns control of data back to users.</p>
 
-            Solid presents several advantages over more traditional architectures for data use by Web services today, including:
-        </p>
+      <div class="noprint">
+        <p class="join"><a class="todo" href="">Join the Solid Working Group (LINK TBD).</a></p>
+      </div>
+
+         <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
+      on <i class="todo"><a href="https://github.com/solid/solid-wg-charter">GitHub</a>.
+
+    Feel free to raise <a href="https://github.com/solid/solid-wg-charter/issues">issues</a></i>.
+          </p>
+
+      <div id="details">
+        <table class="summary-table">
+          <tr id="Status">
+            <th>
+              Charter Status
+            </th>
+            <td>
+              See the <a class="todo" href="">group status page (LINK TBD)</a> and <a href="#history">detailed change history</a>.
+            </td>
+          </tr>
+          <tr id="Duration">
+            <th>
+              Start date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+            </td>
+          </tr>
+          <tr id="CharterEnd">
+            <th>
+              End date
+            </th>
+            <td>
+              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Chairs
+            </th>
+            <td>
+              <i class="todo">TBD</i>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Team Contacts
+            </th>
+            <td>
+              <span class="todo">TBD</span> (<i class="todo">0.x</i> <abbr title="Full-Time Equivalent">FTE</abbr>)
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Meeting Schedule
+            </th>
+            <td>
+              <strong>Teleconferences:</strong> 1-hour calls will be held bi-weekly
+              <br/>
+              <strong>Face-to-face:</strong> we will meet during the W3C's annual Technical Plenary week; additional face-to-face meetings may be scheduled by consent of the participants, usually no more than 3 per year.
+            </td>
+          </tr>
+        </table>
+
+        <p class="issue"><b>Note:</b> The <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a> requires “The level of confidentiality of the group's proceedings and deliverables”; however, it does not mandate where this appears. Since all W3C Working Groups should be chartered as public, this notice has been moved from the essentials table to the <a href="#public">communication section</a>.</p>
+      </div>
+
+      <div id="background" class="background">
+        <h2>Motivation and Background</h2>
+        <p>Cloud services in use on the Web today (2023) often require users to store their data and place control over that data at a third-party cloud provider. Solid adds to existing Web standards to enable user control: <q cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">to realise a space where individuals can maintain their autonomy, control their data and privacy, and choose applications and services to fulfil their needs.</q> Solid defines the notion of Pods, in which users place their own data and control access to that data, and a suite of interoperable protocols for managing Pods, applications that use pods, and interactions with existing protocols for authentication.
+          Solid presents several advantages over more traditional architectures for data use by Web services today, including:</p>
 
         <ul>
-            <li>
-                Solid Pods are controlled by individuals or organizations, not third parties.
-            </li>
-            <li>
-                Solid Pods enable fine-grained control over private data on a per-application and per-principal basis. </li>
-            <li>
-                Solid Pods enable interoperability and data sharing between applications and services while respecting user wishes.
-            </li>
-            <li>
-                Solid Pods enable portability of data, of hosting, and of applications.
-            </li>
+          <li>Solid Pods are controlled by individuals or organizations, not third parties.</li>
+          <li>Solid Pods enable fine-grained control over private data on a per-application and per-principal basis. </li>
+          <li>Solid Pods enable interoperability and data sharing between applications and services while respecting user wishes.</li>
+          <li>Solid Pods enable portability of data, of hosting, and of applications.</li>
         </ul>
 
+        <p>The <cite><a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a></cite> has been incubating <a href="https://solidproject.org/TR/">Technical Reports</a> since 2018 towards that end: <q cite="https://www.w3.org/groups/cg/solid">to describe the interoperability between different classes of products by using Web communication protocols, global identifiers, authentication and authorization mechanisms, data formats and shapes, notifications, and query interfaces.</q></p>
+
+        <p>The wider Solid community has developed a <a href="https://solidproject.org/developers/tools/">suite of implementations, tools, and libraries</a> for developers, as well as <a href="https://solidproject.org/apps">applications</a> for users.</p>
+      </div>
+
+      <section id="scope" class="scope">
+        <h2>Scope</h2>
         <p>
-           The <cite><a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a></cite> has been <em>incubating</em> <a href="https://solidproject.org/TR/">Technical Reports</a> since 2018 towards that end: <q cite="https://www.w3.org/groups/cg/solid">to describe the interoperability between different classes of products by using Web communication protocols, global identifiers, authentication and authorization mechanisms, data formats and shapes, notifications, and query interfaces.</q>
-        </p>
-
-        <p>
-           The wider Solid community has developed a <a href="https://solidproject.org/developers/tools/">suite of implementations, tools, and libraries</a> for developers, as well as <a href="https://solidproject.org/apps">applications</a> for users.
-        </p>
-
-        <p class="mission">
-            The <strong>mission</strong> of the <a class=todo href="">Solid Working Group (LINK TBD)</a> is to standardize the Solid Protocol and its use of associated data interoperability and authentication schemes. This effort will culminate in open standards that can be used by developers of servers and applications to continue to build a rich ecosystem that returns control of data back to users.
-        </p>
-
-        <div class="noprint">
-            <p class="join">
-                <a class=todo href="">Join the Solid Working Group (LINK TBD).</a>
-            </p>
-        </div>
-
-        <section id="details">
-            <table class="summary-table">
-                <tbody><tr>
-                    <th>
-                        Start date
-                    </th>
-                    <td>
-                        <i class=todo>TBD DD Month YYYY</i>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        End date
-                    </th>
-                    <td>
-                        <i class=todo>TBD DD Month YYYY (start date + 24M)</i>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>
-                        Chairs
-                    </th>
-                    <td>
-                        <i class="todo">TBD</i>
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Team Contact
-                    </th>
-                    <td>
-                        <i class="todo">TBD</i> (<i class="todo">0.x</i> <abbr title="Full-Time Equivalent">FTE</abbr>)
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        Meeting Schedule
-                    </th>
-                    <td>
-                        <strong>Teleconferences:</strong> 1-hour calls will be held bi-weekly
-                        <br>
-                        <strong>Face-to-face:</strong> we will meet 
-during the W3C's annual Technical Plenary week; additional face-to-face 
-meetings may be scheduled by consent of the participants, usually no 
-more than 3 per year.
-                    </td>
-                </tr>
-            </tbody></table>
-        </section>
-
-        <section id="scope" class="scope">
-            <h2>Scope</h2>
-
-            <p>
                 The design approach for the <a href="https://solidproject.org/TR/protocol">Solid Protocol</a> will continue substantial efforts undertaken previously in the <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a> to specify a set of interoperable protocol standards for enabling the use and development of Solid servers and applications across a <a href="https://github.com/solid/user-stories">wide range of use cases</a>.
-            </p>
+        </p>
 
-            <p>
+        <p>
                 The Working Group will:
-            </p>
-            <ol>
-                <li>
+        </p>
+        <ol>
+          <li>
                     Define a core protocol specification for the secure and efficient operation of Solid servers and the behavior of clients interacting with those servers.
-                </li>
-                <li>
+          </li>
+          <li>
                     Recommend a data and protocol model for interoperability between multiple applications built upon Solid.
-                </li>
-                <li>
+          </li>
+          <li>
                     Recommend a set of practices needed for data security for Solid Pods, and for both server and client software, including use of appropriate authentication, authorization, verification, identity, and other standards, integrating existing outside efforts.
-                </li>
-                <li>
+          </li>
+          <li>
                     Recommend a set of protocol behaviors and best practices for the use in Solid of the OpenID Connect (OIDC) / Federation identity layer on top of the OAuth 2.0 protocol.
-                </li>
-                <li>
+          </li>
+          <li>
                     Recommend a set of protocol behaviors and best practices to request and grant access to data stored in Solid Pods.
-                </li>
-                <li>
+          </li>
+          <li>
                     Define a protocol for state synchronization regarding changes to resources in Solid pods.
-                </li>
-            </ol>
+          </li>
+        </ol>
 
-            <div id="section-out-of-scope">
-                <h3 id="out-of-scope">Out of Scope</h3>
-                <p>
-                    The following features and topics are out of scope and will not be addressed by this Working Group.
-                </p>
+        <section id="section-out-of-scope">
+          <h3 id="out-of-scope">Out of Scope</h3>
+            <p>The following features are out of scope, and will not be addressed by this Working group.</p>
 
-                <ul>
-                    <li>
-                        Definition of identity mechanisms such as WebID and DID
-                    </li>
-                    <li>
-                        Definition of linked data formats
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Success Criteria</h3>
-                <!-- Testing and interop -->
-                <p>In order to advance to <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent,
-                interoperable
-                implementations</a> of every feature defined in the specification, where
-                interoperability can be verified by passing open test suites, and two or
-                more implementations interoperating with each other.</p>
-
-                <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
-
-                <p>To promote interoperability, the group will publish <a href="https://solidproject.org/ED/qa">Solid QA</a> detailing testing policy, processes, and procedures.</p>
-
-                <!-- Horizontal review -->
-                <p>Each specification should contain sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
-
-                <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
-                recommendations for maximising accessibility in implementations.</p>
-
-                <!-- Design principles -->
-                <p>This Working Group expects to follow the TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.</p>
-            </div>
+          <ul class="out-of-scope">
+            <li>
+                      Definition of identity mechanisms such as WebID and DID
+            </li>
+            <li>
+                      Definition of linked data formats
+            </li>
+          </ul>
         </section>
 
-        <section id="deliverables">
-            <h2>
-                Deliverables
-            </h2>
-            <p>
-                More detailed milestones and updated publication schedules are available on the
-                <a class=todo href="">group publication status page (LINK TBD)</a>.
-            </p>
+      </section>
 
-            <div id="normative">
-                <h3>
-                    Normative Specifications
-                </h3>
-                <p>
-                    The Solid Working Group will deliver the following W3C normative specifications:
-                </p>
+      <section id="deliverables">
+        <h2>
+          Deliverables
+        </h2>
+
+        <p>Updated document status is available on the <a class="todo" href="">group publication status page (LINK TBD)</a>.</p>
+
+        <section id="normative">
+          <h3>
+            Normative Specifications
+          </h3>
+          <p>
+            The Working Group will deliver the following W3C normative specifications:
+          </p>
                 <dl>
-                    <dt id="protocol" class="spec">Solid Protocol v1.0</dt>
+                    <dt id="solid-protocol" class="spec">Solid Protocol v1.0</dt>
                     <dd>
+                    <p><strong>Reference:</strong> <a href="https://solidproject.org/TR/protocol">Solid Protocol v.0.10.0</a>, eds. Sarven Capadisli, Tim Berners-Lee, Ruben Verborgh, Kjetil Kjernsmo. Solid Technical Report 2023.</p>
                         <p>
                             The Solid Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way. <q cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralised Web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access controls, and use preferred applications and services to achieve them.</q>
                         </p>
@@ -334,15 +277,15 @@ more than 3 per year.
                 <p>
                     All specifications, regardless of their progress along the W3C process line from Working Draft to Recommendation, will be given a version number, such as 0.9, which will be incremented like from 0.9 to 0.10 for minor changes. A major version increment like 2.2 to 3.0 will be used if there is an incompatible change in the protocol. The required versions of each dependency will be given in each spec.
                 </p>
-            </div>
+        </section>
 
-            <div id="wg-other-deliverables">
-                <h3>
-                    Other Deliverables
-                </h3>
-                <p>
-                    Other non-normative documents may be created such as:
-                </p>
+        <section id="ig-other-deliverables">
+          <h3>
+            Other Deliverables
+          </h3>
+          <p>
+            Other non-normative documents may be created such as:
+          </p>
                 <dl>
                     <dt id="test-suite" class="spec">Test Suite and Implementation Report</dt>
                     <dd>
@@ -351,10 +294,10 @@ more than 3 per year.
                         </p>
                     </dd>
                 </dl>
-            </div>
+        </section>
 
-            <div id="timeline">
-                <h3>Timeline</h3>
+        <section id="timeline">
+          <h3>Timeline</h3>
 
                 <table class="roadmap">
                     <thead>
@@ -385,237 +328,215 @@ more than 3 per year.
                                 Solid Protocol
                             </th>
                             <td class="WD1" rowspan="1" colspan="1">
-                                <i class=todo>START + 6M</i>
+                                <i class="todo">START + 6M</i>
                             </td>
                             <td class="CR" rowspan="1" colspan="1">
-                                <i class=todo>START + 9M</i>
+                                <i class="todo">START + 9M</i>
                             </td>
                             <td class="PR" rowspan="1" colspan="1">
-                                <i class=todo>START + 12M</i>
+                                <i class="todo">START + 12M</i>
                             </td>
                             <td class="REC" rowspan="1" colspan="1">
-                                <i class=todo>START + 15M</i>
+                                <i class="todo">START + 15M</i>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+        </section>
+      </section>
 
-            </div>
+	<section id="success-criteria">
+	  <h2>Success Criteria</h2>
+
+    <!-- Testing and interop -->
+	  <p>In order to advance to
+		  <a href="https://www.w3.org/Consortium/Process/#RecsPR" title="Proposed Recommendation">Proposed Recommendation</a>, each normative specification is expected to have
+		  <a href="https://www.w3.org/Consortium/Process/#implementation-experience">at least two independent interoperable
+			  implementations</a> of every feature defined in the specification, where
+interoperability can be verified by passing open test suites, and two or
+more implementations interoperating with each other. In order to advance to
+Proposed Recommendation, each normative specification must have an open
+test suite of every feature defined in the specification.</p>
+	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
+    <p>To promote interoperability, the group will publish <a href="https://solidproject.org/ED/qa">Solid QA</a> detailing testing policy, processes, and procedures.</p>
+
+    <!-- Horizontal review -->
+    <p>Each specification should contain sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
+	  <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
+		recommendations for maximising accessibility in implementations.</p>
+
+    <!-- Design principles -->
+    <p>This Working Group expects to follow the
+    TAG <a href="https://www.w3.org/TR/design-principles/">Web Platform Design Principles</a>.
+    </p>
+	</section>
+
+      <section id="coordination">
+        <h2>Coordination</h2>
+        <p>For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/documentreview/#how_to_get_horizontal_review">horizontal review</a> for
+          accessibility, internationalization, privacy, and security with the relevant Working and
+          Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>.
+          Invitation for review must be issued during each major standards-track document transition, including
+          <a href="https://www.w3.org/Consortium/Process/#RecsWD" title="First Public Working Draft">FPWD</a>.  The
+          Working Group is encouraged to engage collaboratively with the horizontal review groups throughout development of
+          each specification.  The Working Group is advised to seek a review at least 3 months before first entering
+          <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a> and is encouraged
+          to proactively notify the horizontal review groups when major changes occur in a specification following a review.</p>
+
+        <p>Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:</p>
+
+        <section>
+          <h3 id="w3c-coordination">W3C Groups</h3>
+          <dl>
+            <dt><a href="https://www.w3.org/groups/cg/credentials">Credentials Community Group</a></dt>
+            <dd>To explore and report on the application of creating, storing, presenting, verifying, and user control of credentials in the context of Solid Protocol.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/did">Decentralized Identifier Working Group</a></dt>
+            <dd>To investigate the areas in which existing DIDs can be adopt by the Solid Protocol (and related technical reports), as well as to advance an understanding of whether a Solid-specific DID method is needed.</dd>
+
+            <dt><a href="https://www.w3.org/groups/cg/ldpnext">LDP Next Community Group</a></dt>
+            <dd>To transfer applicable design decisions and implementation experience towards the Solid Protocol, and report back on components that can be adopted.</dd>
+
+            <dt><a href="https://www.w3.org/groups/cg/n3-dev">Notation 3 (N3) Community Group</a></dt>
+            <dd>To investigate the possibility of transferring Solid Protocol's N3 Patch to the N3 CG where its standardisation development can continue with broader applicability.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/rdf-star">RDF-star Working Group</a></dt>
+            <dd>To reuse and report on recent extensions to RDF and SPARQL that can be incorporated with upstream specifications like the Solid Protocol.</dd>
+
+            <dt><a href="https://www.w3.org/groups/cg/socialcg">Social Web Incubator Community Group</a></dt>
+            <dd>To continue with the development of a shared understanding between Linked Data(-compatible) specifications and their reuse, e.g., ActivityPub, AS2, LDN.</dd>
+
+            <dt><a href="https://www.w3.org/groups/cg/solid">Solid Community Group</a></dt>
+            <dd>To maintain a separation of goals and transfer of incubated work items.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/vc">Verifiable Credentials Working Group</a></dt>
+            <dd>To inquire on the suitability of credentials data models and serializations, and their potential integration with the Solid Protocol.</dd>
+
+            <dt><a href="https://www.w3.org/groups/cg/webid">WebID Community Group</a></dt>
+            <dd>To provide integration feedback on the use of WebIDs in Solid Protocol (and related technical reports) in order to stabilise the fundamental notions and behaviours.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/webauthn">Web Authentication Working Group</a></dt>
+            <dd>To ensure that Web Authentication primitives align with Solid principles and aims, as well as investigate areas to bridge with the WebAuthn API to improve user's privacy and consent.</dd>
+
+            <dt><a href="https://www.w3.org/groups/cg/wicg">Web Platform Incubator Community Group</a></dt>
+            <dd>To further develop a mutual understanding of how the federated credential management API and Solid OIDC can align better.</dd>
+
+            <dt><a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a></dt>
+            <dd>To investigate the suitability of Solid Protocol in the context of IoT platforms and application domains, and ways to improve their integration.</dd>
+          </dl>
         </section>
 
-
-        <section id="coordination">
-            <h2>Coordination</h2>
-            <p>
-                For all specifications, this Working Group will seek <a href="https://www.w3.org/Guide/Charter.html#horizontal-review">horizontal review</a>
- for accessibility, internationalization, performance, privacy, and 
-security with the relevant Working and Interest Groups, and with the <a href="https://www.w3.org/2001/tag/" title="Technical Architecture Group">TAG</a>. Invitation for review must be issued during each major standards-track document transition, including the <a href="https://www.w3.org/Consortium/Process//#RecsWD" title="First Public Working Draft">FPWD</a> and at least 3 months before the <a href="https://www.w3.org/Consortium/Process/#RecsCR" title="Candidate Recommendation">CR</a>, and should be issued when major changes occur in a specification.
-            </p>
-
-            <p>
-                Additional technical coordination with the following Groups will be made, per the <a href="https://www.w3.org/Consortium/Process/#WGCharter">W3C Process Document</a>:
-              </p>
-
-            <div>
-                <h3 id="w3c-coordination">W3C Groups</h3>
-
-                <dl>
-                    <dt><a href="https://www.w3.org/groups/cg/credentials">Credentials Community Group</a></dt>
-                    <dd>To explore and report on the application of creating, storing, presenting, verifying, and user control of credentials in the context of Solid Protocol.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/wg/did">Decentralized Identifier Working Group</a></dt>
-                    <dd>To investigate the areas in which existing DIDs can be adopt by the Solid Protocol (and related technical reports), as well as to advance an understanding of whether a Solid-specific DID method is needed.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/cg/ldpnext">LDP Next Community Group</a></dt>
-                    <dd>To transfer applicable design decisions and implementation experience towards the Solid Protocol, and report back on components that can be adopted.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/cg/n3-dev">Notation 3 (N3) Community Group</a></dt>
-                    <dd>To investigate the possibility of transferring Solid Protocol's N3 Patch to the N3 CG where its standardisation development can continue with broader applicability.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/wg/rdf-star">RDF-star Working Group</a></dt>
-                    <dd>To reuse and report on recent extensions to RDF and SPARQL that can be incorporated with upstream specifications like the Solid Protocol.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/cg/socialcg">Social Web Incubator Community Group</a></dt>
-                    <dd>To continue with the development of a shared understanding between Linked Data(-compatible) specifications and their reuse, e.g., ActivityPub, AS2, LDN.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/cg/solid">Solid Community Group</a></dt>
-                    <dd>To maintain a separation of goals and transfer of incubated work items.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/wg/vc">Verifiable Credentials Working Group</a></dt>
-                    <dd>To inquire on the suitability of credentials data models and serializations, and their potential integration with the Solid Protocol.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/cg/webid">WebID Community Group</a></dt>
-                    <dd>To provide integration feedback on the use of WebIDs in Solid Protocol (and related technical reports) in order to stabilise the fundamental notions and behaviours.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/wg/webauthn">Web Authentication Working Group</a></dt>
-                    <dd>To ensure that Web Authentication primitives align with Solid principles and aims, as well as investigate areas to bridge with the WebAuthn API to improve user's privacy and consent.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/cg/wicg">Web Platform Incubator Community Group</a></dt>
-                    <dd>To further develop a mutual understanding of how the federated credential management API and Solid OIDC can align better.</dd>
-
-                    <dt><a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a></dt>
-                    <dd>To investigate the suitability of Solid Protocol in the context of IoT platforms and application domains, and ways to improve their integration.</dd>
-                </dl>
-
-                <h3 id="external-coordination">External Organizations</h3>
-                <dl>
-                    <dt><a href="https://openid.net/wg/connect/">OpenID Connect Work Group</a></dt>
-                    <dd>Coordination on specifications related to OpenID Connect (OIDC).</dd>
-                </dl>
-
-            </div>
-
-            <!-- <div>
-            <h3 id="external-coordination">External Groups</h3>
-            <dl>
-                <dt>
-                    <a href="https://schema.org">Schema.org</a>
-                </dt>
-                <dd>
-Schema.org should be regularly solicited for reviews and comments on the advancement
-of the JSON-LD 1.1 Recommendation.
-                </dd>
-            </dl>
-        </div> -->
+        <section>
+          <h3 id="external-coordination">External Organizations</h3>
+          <dl>
+            <dt><a href="https://openid.net/wg/connect/">OpenID Connect Work Group</a></dt>
+            <dd>Coordination on specifications related to OpenID Connect (OIDC).</dd>
+          </dl>
         </section>
+      </section>
 
-        <section class="participation">
-            <h2 id="participation">
-                Participation
-            </h2>
-            <p>
-                To be successful, this Working Group is expected to have
- 6 or more active participants for its duration, including 
-representatives from the key implementors of this specification, and 
-active Editors and Test Leads for each specification. The Chairs, 
-specification Editors, and Test Leads are expected to contribute half of
- a working day per week towards the Working Group. There is no minimum 
-requirement for other Participants.
-            </p>
-            <p>
-                The group encourages questions, comments and issues on 
-its public mailing lists and document repositories, as described in <a href="#communication">Communication</a>.
-            </p>
-            <p>
-                W3C Members are invited to <a class="todo" href="https://www.w3.org/2004/01/pp-impl/#####/join">join this Working Group</a>. Individuals who wish to participate as Invited Experts (i.e., they do not represent a W3C Member) should refer to the <a href="https://www.w3.org/2004/08/invexp.html">policy for approval of Invited Experts</a>.
- The group also welcomes non-Members to contribute technical submissions
- for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
-            </p>
-        </section>
 
-        <section id="communication">
-            <h2>
-                Communication
-            </h2>
-            <p id="public">
-                Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>:
- the meeting minutes from teleconference and face-to-face meetings will 
-be archived for public review, and technical discussions and issue 
-tracking will be conducted in a manner that can be both read and written
- to by the general public. Working Drafts and Editor's Drafts of 
-specifications will be developed on a public repository, and may permit 
-direct public contribution requests. The meetings themselves are not 
-open to public participation, however.
-            </p>
-            <p>
-                Information about the group (including details about 
-deliverables, issues, actions, status, participants, and meetings) will 
-be available from the <a class=todo href="">Solid Working Group home page (LINK TBD).</a>
-            </p>
-            <p>
-                Most Working Group 
-teleconferences will focus on discussion of particular specifications, 
-and will be conducted on an as-needed basis.
-            </p>
-            <p>
-                This group primarily conducts its technical work on the public mailing list <a class="todo" id="public-name" href="mailto:public-solid-wg@w3.org">public-solid-wg@w3.org (LINK TBD)</a> ( <a class="todo" href="https://lists.w3.org/Archives/Public/public-solid-wg/">archive (LINK TBD)</a>) or on <a class="todo" id="public-github" href="https://github.com/w3c/solid-wg/">GitHub issues (LINK TBD)</a>
- (and specification-specific GitHub repositories and issue trackers). 
-The public is invited to review, discuss and contribute to this work.
-            </p>
-            <p>
-                The group will publish minutes for each teleconference at <a class="todo" href="https://github.com/w3c/solid-wg/Meeting/Minutes/">https://github.com/w3c/solid-wg/Meeting/Minutes/ (LINK TBD)</a>.
-            </p>
-        </section>
 
-        <section id="decisions">
-            <h2>
-                Decision Policy
-            </h2>
-            <p>
-                This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>.
- Typically, an editor or other participant makes an initial proposal, 
-which is then refined in discussion with members of the group and other 
-reviewers, and consensus emerges with little formal voting being 
-required.
-            </p>
-            <p>
-                However, if a decision is necessary for timely progress,
- but consensus is not achieved after careful consideration of the range 
-of views presented, the Chairs may call for a group vote, and record a 
-decision along with any objections.
-            </p>
-            <p>
-                To afford asynchronous decisions and organizational 
-deliberation, any resolution (including publication decisions) taken in a
- face-to-face meeting or teleconference will be considered provisional.
-            </p>
-            <p>
-                A call for consensus (CfC) will be issued for all 
-resolutions (for example, via email and/or web-based survey), with a 
-response period from one week to 10 working days, depending on the 
-chair's evaluation of the group consensus on the issue.
-            </p>
-            <p>
-                If no objections are raised on the mailing list by the 
-end of the response period, the resolution will be considered to have 
-consensus as a resolution of the Working Group.
-            </p>
-            <p>
-                All decisions made by the group should be considered 
-resolved unless and until new information becomes available, or unless 
-reopened at the discretion of the Chairs or the Director.
-            </p>
-            <p>
-                This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
-            </p>
-        </section>
+      <section class="participation">
+        <h2 id="participation">
+          Participation
+        </h2>
+        <p>
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+        </p>
+        <p>
+          The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
+        </p>
+        <p>
+          The group also welcomes non-Members to contribute technical submissions for consideration upon their agreement to the terms of the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a>.
+        </p>
+        <p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+          W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.</p>
+      </section>
 
-        <section id="patentpolicy">
-            <h2>
-                Patent Policy
-            </h2>
-            <p>
-                This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent
-                    Policy</a> (Version of 15 September 2020). To 
-promote the widest adoption of Web standards, W3C seeks to issue 
-Recommendations that can be implemented, according to this policy, on a 
-Royalty-Free basis.
-            </p>
-            <p>
-                For more information about disclosure obligations for this group, please see the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy Implementation</a>.
-            </p>
-        </section>
 
-        <section id="licensing">
-            <h2>Licensing</h2>
-            <p>
-                This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.
-            </p>
-        </section>
 
-        <section id="about">
-            <h2>
-                About this Charter
-            </h2>
-            <p>
-                This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5.2</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>.
- In the event of a conflict between this document or the provisions of 
-any charter and the W3C Process, the W3C Process shall take precedence.
-            </p>
+      <section id="communication">
+        <h2>
+          Communication
+        </h2>
+        <p id="public">
+          Technical discussions for this Working Group are conducted in <a href="https://www.w3.org/Consortium/Process/#confidentiality-levels">public</a>: the meeting minutes from teleconference and face-to-face meetings will be archived for public review, and technical discussions and issue tracking will be conducted in a manner that can be both read and written to by the general public. Working Drafts and Editor's Drafts of specifications will be developed in public repositories and may permit direct public contribution requests.
+        The meetings themselves are not open to public participation, however.
+        </p>
+        <p>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a class="todo" href="">Solid Working Group home page (LINK TBD).</a>
+        </p>
+        <p>
+          Most Solid Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+        </p>
+        <p>
+          This group primarily conducts its technical work: on the public mailing list <a class="todo" id="public-name" href="mailto:public-solid-wg@w3.org">public-solid-wg@w3.org (LINK TBD)</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-solid-wg/">archive (LINK TBD)</a>)
+          or on <a class="todo" id="public-github" href="https://github.com/w3c/solid-wg/">GitHub issues (LINK TBD)</a>.
+          The public is invited to review, discuss and contribute to this work.
+        </p>
+        <p>
+          The group may use a Member-confidential mailing list for administrative purposes and, at the discretion of the Chairs and members of the group, for member-only discussions in special cases when a participant requests such a discussion.
+        </p>
+      </section>
 
-            <section id="history">
+
+
+      <section id="decisions">
+        <h2>
+          Decision Policy
+        </h2>
+        <p>
+          This group will seek to make decisions through consensus and due process, per the <a href="https://www.w3.org/Consortium/Process/#Consensus">W3C Process Document (section 5.2.1, Consensus)</a>. Typically, an editor or other participant makes an initial proposal, which is then refined in discussion with members of the group and other reviewers, and consensus emerges with little formal voting being required.</p>
+        <p>
+           However, if a decision is necessary for timely progress and consensus is not achieved after careful consideration of the range of views presented, the Chairs may call for a group vote and record a decision along with any objections.
+        </p>
+        <p>
+          To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
+
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'>one week to 10 working days</span>, depending on the chair's evaluation of the group consensus on the issue.
+
+          If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
+        </p>
+        <p>
+          All decisions made by the group should be considered resolved unless and until new information becomes available or unless reopened at the discretion of the Chairs or the Director.
+        </p>
+        <p>
+          This charter is written in accordance with the <a href="https://www.w3.org/Consortium/Process/#Votes">W3C Process Document (Section 5.2.3, Deciding by Vote)</a> and includes no voting procedures beyond what the Process Document requires.
+        </p>
+      </section>
+
+
+
+      <section id="patentpolicy">
+        <h2>
+          Patent Policy
+        </h2>
+        <p>
+          This Working Group operates under the <a href="https://www.w3.org/Consortium/Patent-Policy/">W3C Patent Policy</a> (Version of 15 September 2020). To promote the widest adoption of Web standards, W3C seeks to issue Web specifications that can be implemented, according to this policy, on a Royalty-Free basis.
+
+          For more information about disclosure obligations for this group, please see the <a class="issue" href="">licensing information (LINK TBD)</a>.
+        </p>
+      </section>
+
+      <section id="licensing">
+        <h2>Licensing</h2>
+        <p>This Working Group will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+      </section>
+
+
+
+      <section id="about">
+        <h2>
+          About this Charter
+        </h2>
+        <p>
+          This charter has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 3.4</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+        </p>
+
+        <section id="history">
           <h3>
-Charter History
+            Charter History
           </h3>
 
           <p>The following table lists details of all changes from the initial charter, per the <a href="https://www.w3.org/Consortium/Process/#CharterReview">W3C Process Document (section 4.3, Advisory Committee Review of a Charter)</a>:</p>
@@ -623,33 +544,54 @@ Charter History
           <table class="history">
             <tbody>
               <tr>
-                <th> Charter Period </th>
-                <th> Start Date </th>
-                <th> End Date </th>
-                <th> Changes </th>
+                <th>
+                  Charter Period
+                </th>
+                <th>
+                  Start Date
+                </th>
+                <th>
+                  End Date
+                </th>
+                <th>
+                  Changes
+                </th>
               </tr>
               <tr>
-                <th> <span class=todo><a href="">Initial Charter</a></span> </th>
-                <td> <i class=todo>Month YYYY</i> </td>
-                <td> <i class=todo>Month YYYY</i> </td>
-                <td> <i class=todo>none</i> </td>
+                <th>
+                  <a class="todo" href="">Initial Charter</a>
+                </th>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">[dd monthname yyyy]</i>
+                </td>
+                <td>
+                  <i class="todo">none</i>
+                </td>
               </tr>
-    </tbody>
-        </table>
+            </tbody>
+          </table>
         </section>
-      <section>
-    </section></section></main>
+      </section>
+    </main>
 
-    <hr>
+    <hr/>
 
     <footer>
-        <address>
-            <a class="todo" href="mailto:???@w3.org">??? (LINK TBD)</a>
+      <address>
+        <i class="todo"><a href="mailto:">[team contact name]</a></i>
       </address>
 
-        <p class="copyright">
-            <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2019 <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> ( <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
-        </p>
-        <hr>
-        <p><a href="https://github.com/solid/solid-wg-charter">Yes, it's on GitHub!</a>.</p>    </footer>
-</body></html>
+<p class="copyright">Copyright © 2023 <a href="https://www.w3.org/">World Wide Web Consortium</a>.<br/>
+  <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
+      <a rel="license" href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document" title="W3C Software and Document Notice and License">permissive document license</a> rules apply.</p>
+      <hr/>
+      <p><span class="todo"><a href="https://github.com/w3c/charter-drafts">Yes, it's on GitHub!</a>.</span></p>
+    </footer>
+
+  </body>
+</html>
