@@ -242,42 +242,60 @@
                 <dl>
                     <dt id="solid-protocol" class="spec">Solid Protocol v1.0</dt>
                     <dd>
-                    <p><strong>Reference:</strong> <a href="https://solidproject.org/TR/protocol">Solid Protocol v.0.10.0</a>, eds. Sarven Capadisli, Tim Berners-Lee, Ruben Verborgh, Kjetil Kjernsmo. Solid Technical Report 2023.</p>
                         <p>
                             The Solid Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way. <q lang="en-GB" cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralised Web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access controls, and use preferred applications and services to achieve them.</q>
+                        </p>
+                        <p class="draft-status">
+                          <b>Draft state:</b> Adopted from <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a>.
+                        </p>
+
+                        <p>
+                          <b>Adopted Draft</b>: <a href="https://solidproject.org/TR/2022/protocol-20221231">Solid Protocol, Version 0.10.0</a>, eds. Sarven Capadisli, Tim Berners-Lee, Ruben Verborgh, Kjetil Kjernsmo. W3C Solid Community Group, 2022.
                         </p>
                         <p>
                             When possible, the Solid Protocol will evolve while maintaining a high degree of compatibility with existing implementations, of both servers and clients, and with features from prior versions. If incompatible changes have to be made, then they will be done by introducing a stage where both old and new protocols are supported, to allow the implementors to upgrade their systems in a managed way.
                         </p>
                         <p>
-                            The Solid Protocol may include protocol details for integration with the following:
+                            The Solid Protocol may include protocol details for integration with identity layers and mechanisms; access management and data integrity; notifications about resource changes; and, authorization mechanisms.
                         </p>
-                            <ol>
-                                <li>
-                                    <a href="https://openid.net/connect/">OpenID Connect</a>
-                                </li>
-                                <li>
-                                    Access management and data integrity using <a href="https://www.w3.org/TR/vc-data-model/">Verifiable Credentials Data Model</a>
-                                </li>
-                                <li>
-                                    Identity mechanisms such as <a href="https://www.w3.org/2005/Incubator/webid/spec/identity/">WebID</a> and <a href="https://www.w3.org/TR/did-core/">DID</a>
-                                </li>
-                                <li>
-                                    Notifications about resource changes using <a href="https://solidproject.org/TR/notifications-protocol">Solid Notifications Protocol</a>
-                                </li>
-                                <li>
-                                    Authorization mechanisms such as <a href="https://solidproject.org/TR/wac">Web Access Control</a> and <a href="https://solidproject.org/TR/acp">Access Control Policy</a>
-                                </li>
-                            </ol>
                     </dd>
                 </dl>
 
                 <p>
-                    Note that the WG may decide, based on editorial and readability considerations, to spin off sections into separate Recommendations track specifications.
+                    All specifications, regardless of their progress along the W3C Process line from First Public Working Draft to Recommendation, will indicate their version using the <a href="https://semver.org/">Semantic Versioning</a> scheme. The required versions of each dependency will be given in each specification.
                 </p>
-                <p>
-                    All specifications, regardless of their progress along the W3C process line from Working Draft to Recommendation, will be given a version number, such as 0.9, which will be incremented like from 0.9 to 0.10 for minor changes. A major version increment like 2.2 to 3.0 will be used if there is an incompatible change in the protocol. The required versions of each dependency will be given in each spec.
-                </p>
+        </section>
+
+        <section id="tentative-deliverables">
+          <h3>Tentative Deliverables</h3>
+
+          <p>Depending on the progress, including consideration for <a href="https://www.w3.org/2021/Process-20211102/#adequate-implementation">adequate implementation experience</a>, the Group may also produce W3C Recommendations for the following documents:</p>
+
+          <dl>
+              <dt><a href="https://solidproject.org/TR/oidc">Solid-OpenID</a></dt>
+              <dd>Allows entities to authenticate within the Solid ecosystem.</dd>
+
+              <dt><a href="https://solidproject.org/TR/wac">Web Access Control</a></dt>
+              <dd>Web Access Control (<abbr title="Web Access Control">WAC</abbr>) is a decentralized cross-domain access control system providing a way for Linked Data systems to set authorization conditions on HTTP resources using the Access Control List (<abbr title="Access Control List">ACL</abbr>) model.</dd>
+
+              <dt><a href="https://solidproject.org/TR/acp">Access Control Policy</a></dt>
+              <dd>Access Control Policy (<abbr title="Access Control Policy">ACP</abbr>) is a language for describing, controlling, and granting access to resources.</dd>
+
+              <dt><a href="https://solidproject.org/TR/notifications-protocol">Solid Notifications Protocol</a></dt>
+              <dd>Linked Data-based protocol for sending notification to client application upon updates to resources in the Solid ecosystem while respecting resource-based access controls and privacy.</dd>
+          </dl>
+        </section>
+
+        <section id="add-new-deliverables">
+          <h3>
+            Adding new Recommendation-track deliverables
+          </h3>
+          <p>
+            If additional in-scope Recommendation-track deliverables need to be added to the Charter before the Charter expires, the Working Group will prepare an updated Charter that differs only in deliverables.
+          </p>
+          <p>
+            The Working Group will not adopt new proposals until they have matured through the <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a> or another similar incubation phase.
+          </p>
         </section>
 
         <section id="ig-other-deliverables">
