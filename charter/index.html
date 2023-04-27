@@ -119,7 +119,7 @@
               Start date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy] (date of the "Call for Participation", when the charter is approved)</i>
+              <i class="todo">[yyyy-mm-dd] (date of the "Call for Participation", when the charter is approved)</i>
             </td>
           </tr>
           <tr id="CharterEnd">
@@ -127,7 +127,7 @@
               End date
             </th>
             <td>
-              <i class="todo">[dd monthname yyyy]</i> (Start date + 2 years)
+              <i class="todo">[yyyy-mm-dd]</i> (Start date + 2 years)
             </td>
           </tr>
           <tr>
@@ -163,7 +163,7 @@
 
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
-        <p>Cloud services in use on the Web today (2023) often require users to store their data and place control over that data at a third-party cloud provider. Solid adds to existing Web standards to enable user control: <q cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">to realise a space where individuals can maintain their autonomy, control their data and privacy, and choose applications and services to fulfill their needs.</q> Solid defines the notion of storage (one feature of the construct informally referred to as Solid Pods), in which users place their own data and control access to that data, and a suite of interoperable protocols for managing storage, applications that use storage, and interactions with existing protocols for authentication.
+        <p>Cloud services in use on the Web today (2023) often require users to store their data and place control over that data at a third-party cloud provider. Solid adds to existing Web standards to enable user control: <q lang="en-GB" cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">to realise a space where individuals can maintain their autonomy, control their data and privacy, and choose applications and services to fulfil their needs.</q> Solid defines the notion of storage (one feature of the construct informally referred to as Solid Pods), in which users place their own data and control access to that data, and a suite of interoperable protocols for managing storage, applications that use storage, and interactions with existing protocols for authentication.
           Solid presents several advantages over more traditional architectures for data use by Web services today, including:</p>
 
         <ul>
@@ -192,16 +192,16 @@
                     Define a core protocol specification for the secure and efficient operation of Solid servers and the behavior of clients interacting with those servers.
           </li>
           <li>
-                    Recommend a set of practices needed for data security for Solid Pods, and for both server and client software, including use of appropriate authentication, authorization, verification, identity, and other standards, integrating existing outside efforts.
+                    Recommend a set of practices needed for data security for Solid storage, and for both server and client software, including use of appropriate authentication, authorization, verification, identity, and other standards, integrating existing outside efforts.
           </li>
           <li>
                     Recommend a set of protocol behaviors and best practices for the use in Solid of the OpenID Connect (OIDC) / Federation identity layer on top of the OAuth 2.0 protocol.
           </li>
           <li>
-                    Recommend a set of protocol behaviors and best practices to request and grant access to data stored in Solid storages.
+                    Recommend a set of protocol behaviors and best practices to request and grant access to data stored in Solid storage.
           </li>
           <li>
-                    Define a protocol for state synchronization regarding changes to resources in Solid storages.
+                    Define a protocol for state synchronization regarding changes to resources in Solid storage.
           </li>
         </ol>
 
@@ -240,7 +240,7 @@
                     <dd>
                     <p><strong>Reference:</strong> <a href="https://solidproject.org/TR/protocol">Solid Protocol v.0.10.0</a>, eds. Sarven Capadisli, Tim Berners-Lee, Ruben Verborgh, Kjetil Kjernsmo. Solid Technical Report 2023.</p>
                         <p>
-                            The Solid Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way. <q cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralised Web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access controls, and use preferred applications and services to achieve them.</q>
+                            The Solid Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way. <q lang="en-GB" cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralised Web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access controls, and use preferred applications and services to achieve them.</q>
                         </p>
                         <p>
                             When possible, the Solid Protocol will evolve while maintaining a high degree of compatibility with existing implementations, of both servers and clients, and with features from prior versions. If incompatible changes have to be made, then they will be done by introducing a stage where both old and new protocols are supported, to allow the implementors to upgrade their systems in a managed way.
@@ -360,7 +360,7 @@ test suite of every feature defined in the specification.</p>
     <!-- Horizontal review -->
     <p>Each specification should contain sections detailing all known security and privacy implications for implementers, Web authors, and end users.</p>
 	  <p>Each specification should contain a section on accessibility that describes the benefits and impacts, including ways specification features can be used to address them, and
-		recommendations for maximising accessibility in implementations.</p>
+		recommendations for maximizing accessibility in implementations.</p>
 
     <!-- Design principles -->
     <p>This Working Group expects to follow the
@@ -410,7 +410,7 @@ test suite of every feature defined in the specification.</p>
             <dd>To inquire on the suitability of credentials data models and serializations, and their potential integration with the Solid Protocol.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/webid">WebID Community Group</a></dt>
-            <dd>To provide integration feedback on the use of WebIDs in Solid Protocol (and related technical reports) in order to stabilise the fundamental notions and behaviours.</dd>
+            <dd>To provide integration feedback on the use of WebIDs in Solid Protocol (and related technical reports) in order to stabilise the fundamental notions and behaviors.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/webauthn">Web Authentication Working Group</a></dt>
             <dd>To ensure that Web Authentication primitives align with Solid principles and aims, as well as investigate areas to bridge with the WebAuthn API to improve user's privacy and consent.</dd>
@@ -491,7 +491,7 @@ test suite of every feature defined in the specification.</p>
         <p>
           To afford asynchronous decisions and organizational deliberation, any resolution (including publication decisions) taken in a face-to-face meeting or teleconference will be considered provisional.
 
-          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'>one week to 10 working days</span>, depending on the chair's evaluation of the group consensus on the issue.
+          A call for consensus (CfC) will be issued for all resolutions (for example, via email, GitHub issue or web-based survey), with a response period from <span id='cfc'>five to ten working days</span>, depending on the chair's evaluation of the group consensus on the issue.
 
           If no objections are raised by the end of the response period, the resolution will be considered to have consensus as a resolution of the Working Group.
         </p>
@@ -559,10 +559,10 @@ test suite of every feature defined in the specification.</p>
                   <a class="todo" href="">Initial Charter</a>
                 </th>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  <i class="todo">[yyyy-mm-dd]</i>
                 </td>
                 <td>
-                  <i class="todo">[dd monthname yyyy]</i>
+                  <i class="todo">[yyyy-mm-dd]</i>
                 </td>
                 <td>
                   <i class="todo">none</i>
