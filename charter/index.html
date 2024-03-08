@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
 
-    <title>PROPOSED Solid Working Group Charter</title>
+    <title>PROPOSED PUMPKIN Working Group Charter</title>
 
     <link rel="stylesheet" href="https://www.w3.org/2005/10/w3cdoc.css" type="text/css" media="screen"/>
     <link rel="stylesheet" type="text/css" href="https://www.w3.org/OldGuide/pubrules-style.css"/>
@@ -41,6 +41,10 @@
 
       .todo {
         color: #900;
+      }
+
+      .new {
+        background-color: rgba(128, 255, 128, 0.5);
       }
 
       footer {
@@ -82,7 +86,7 @@
 
 
     <main>
-      <h1 id="title">PROPOSED Solid Working Group Charter</h1>
+      <h1 id="title">PROPOSED PUMPKIN Working Group Charter</h1>
       <!-- delete PROPOSED after AC review completed -->
 
       <div style="border: 1px solid darkred">
@@ -92,11 +96,12 @@
         <p>Any text rendered like <span class="todo">this</span> refers to content that must be updated when the final charter is published at the latest (e.g., adjusting hyperlinks).</p>
       </div>
 
-      <p class="mission">The <strong>mission</strong> of the <a href="">Solid Working Group <i class="todo">(LINK TBD)</i></a> is to standardize a protocol for user-centric data and its use of associated data interoperability and authentication schemes.
-      The resulting open standards intends to ensure interoperability and foster development in a decade-old ecosystem of application and server developers, aiming to return control of data back to users.</p>
+      <p class="mission new">The <strong>mission</strong> of the <a href="">PUMPKIN Working Group <i class="todo">(LINK TBD)</i></a> is to 
+      enable the development of web applications where data storage, authentication, and access control, are decoupled from the application provider.
+      This will be achieved by standardizing a protocol between client-side applications, on the one hand, and identity and storage providers, on the other hand.</p>
 
       <div class="noprint">
-        <p class="join"><a href="">Join the Solid Working Group <i class="todo">(LINK TBD)</i>.</a></p>
+        <p class="join"><a href="">Join the PUMPKIN Working Group <i class="todo">(LINK TBD)</i>.</a></p>
       </div>
 
          <p style="padding: 0.5ex; border: 1px solid green"> This proposed charter is available
@@ -167,40 +172,41 @@
 
       <div id="background" class="background">
         <h2>Motivation and Background</h2>
-        <p>It is common for web service providers to require users to surrender control over their own data, and store them in a way that is often restricted to certain systems, or can only be accessed by the applications that created it.</p>
+        <p>It is common for web service providers to require users to surrender control over their own data, and store them in a way that is often restricted to certain systems, or can only be accessed by the applications that created them.
+        </p>
 
-        <p>Solid is largely based on existing open web standards, and extends them to give priority to individual and community autonomy. It allows them to keep authority over their identity, data, and privacy, and gives them the freedom to select applications and services that suit their needs.</p>
+        <p><span class=new>A number of initiatives, such as <a href="https://indieweb.org/">IndieWeb</a>, <a href="https://www.w3.org/community/unhosted/">Unhosted</a> and <a href="https://solidproject.org/">Solid</a>, have emerged to propose alternative models for web applications.
+        They are</span> largely based on existing open web standards, and extend them to give priority to individual and community autonomy.</p>
+        
+        <p>The <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a> has been incubating <a href="https://solidproject.org/TR/">specifications</a> since 2018 towards that end: <q cite="https://www.w3.org/groups/cg/solid">to describe the interoperability between different classes of products by using web communication protocols, global identifiers, authentication and authorization mechanisms, data formats and shapes, notifications, and query interfaces.</q>
+        <span class=new>It has regularly sought cross-fertilization with the aforementioned communities and others (e.g. the <a href="https://www.w3.org/community/fed-id/">Federated Identity CG</a> and the <a href="https://www.w3.org/community/socialcg/">Social Web Incubator CG</a>).</span></p>
 
-        <p>Solid defines the concept of storage (one feature of the construct informally referred to as Solid Pods), in which users place data and control access to it, and a suite of protocols for applications to use storages.</p>
+        <p>The wider Solid community has developed a <a href="https://solidproject.org/developers/tools/">suite of implementations, tools, and libraries</a> for developers, as well as <a href="https://solidproject.org/apps">applications</a> for users.:
+        <span class=new>See a separate <a href="https://timbl.solidcommunity.net/2023/03%20EWADA/TAGExplainerforSolid.html">explainer</a> for more detailed description of the Solid approach.</span>
+        </p>
 
-        <p>Solid offers several advantages over more traditional architectures for data use by web services today, including:</p>
-
-        <ul>
-          <li>Storage is controlled by individuals or organizations, and can be delegated to other parties.</li>
-          <li>Interoperability between applications and various storage server implementations of the protocol.</li>
-          <li>A decentralized trust model enabling authentication and authorization mechanisms across the web.</li>
-        </ul>
-
-        <p>The <cite><a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a></cite> has been incubating <a href="https://solidproject.org/TR/">Technical Reports</a> since 2018 towards that end: <q cite="https://www.w3.org/groups/cg/solid">to describe the interoperability between different classes of products by using web communication protocols, global identifiers, authentication and authorization mechanisms, data formats and shapes, notifications, and query interfaces.</q></p>
-
-        <p>The wider Solid community has developed a <a href="https://solidproject.org/developers/tools/">suite of implementations, tools, and libraries</a> for developers, as well as <a href="https://solidproject.org/apps">applications</a> for users.</p>
       </div>
 
       <section id="scope" class="scope">
         <h2>Scope</h2>
-        <p>
-                The design approach for the <a href="https://solidproject.org/TR/protocol">Solid Protocol</a> will continue substantial efforts undertaken previously in the <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a> to specify a set of interoperable protocol standards for enabling the use and development of Solid servers and applications across a <a href="https://github.com/solid/user-stories">wide range of use cases</a>.
-        </p>
 
         <p>
-                The Working Group will:
+          <span class=new>The scope of the Working Group is to define a web protocol between client-side application, on the one hand, and storage and identity server, on the other hand, allowing</span> users to keep authority over their data, identity, and privacy.
+          This protocol must ensure interoperability between compliant applications and various storage and identity server,
+          thus giving users the freedom to select the applications and services that suit their needs.
         </p>
+
+
+        <p>
+        Based on the <a href="https://github.com/solid/user-stories">user cases</a> identified by the Solid project, potentially extended by Working Group participants, the Working Group will:
+        </p>
+
         <ol>
           <li>
-                    Define a core protocol specification for the secure and efficient operation of Solid servers and the behavior of clients interacting with those servers.
+                    Define a core web protocol specification for the secure and efficient operation of compliant servers and the behavior of compliant client-side applications interacting with those servers.
           </li>
           <li>
-                    Recommend a set of practices needed for data security for Solid storage, and for both server and client software, including use of appropriate authentication, authorization, access management lifecycle, verification, identity, and other standards, integrating existing outside efforts.
+                    Recommend a set of practices needed for data security for PUMPKIN storage, and for both server and client software, including use of appropriate authentication, authorization, access management life-cycle, verification, identity, and other standards, integrating existing outside efforts.
           </li>
         </ol>
 
@@ -238,23 +244,20 @@
             The Working Group will deliver the following W3C normative specifications:
           </p>
                 <dl>
-                    <dt id="solid-protocol" class="spec">Solid Protocol v1.0</dt>
+                    <dt id="PUMPKIN-protocol" class="spec">PUMPKIN Protocol v1.0</dt>
                     <dd>
                         <p>
-                            The Solid Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way. <q lang="en-GB" cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralised web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access controls, and use preferred applications and services to achieve them.</q>
-                        </p>
-                        <p class="draft-status">
-                          <b>Draft state:</b> Adopted from <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a>.
-                        </p>
-
-                        <p>
-                          <b>Adopted Draft</b>: <a href="https://solidproject.org/ED/protocol">Solid Protocol, latest published version (0.10.0) or Editor's Draft</a>
+                            The PUMPKIN Protocol specification aims to provide applications with secure and permissioned access to externally stored data in an interoperable way.
                         </p>
                         <p>
-                            When possible, the Solid Protocol will evolve while maintaining a high degree of compatibility with existing implementations, of both servers and clients, and with features from prior versions. If incompatible changes have to be made, then they will be done by introducing a stage where both old and new protocols are supported, to allow the implementors to upgrade their systems in a managed way.
+                            The PUMPKIN Protocol may include protocol details for integration with identity layers and mechanisms; access management and data integrity; notifications about resource changes; and, authorization mechanisms.
                         </p>
                         <p>
-                            The Solid Protocol may include protocol details for integration with identity layers and mechanisms; access management and data integrity; notifications about resource changes; and, authorization mechanisms.
+                          <b>Input document</b>: <a href="https://solidproject.org/ED/protocol">Solid Protocol, latest published version (0.10.0) or Editor's Draft</a>, adopted from the <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a>.
+                             <q lang="en-GB" cite="https://solidproject.org/TR/2022/protocol-20221231#introduction">An overarching design goal of the Solid ecosystem is to be evolvable and to provide fundamental affordances for decentralized web applications for information exchange in a way that is secure and privacy respecting. In this environment, actors allocate identifiers for their content, shape and store data where they have access to, set access controls, and use preferred applications and services to achieve them.</q>
+                        </p>
+                        <p class=new>
+                          The Working Group may consider other input, in addition to this specification, that is relevant to its scope and to the goal of this deliverable.
                         </p>
                     </dd>
                 </dl>
@@ -267,7 +270,7 @@
         <section id="dependencies">
           <h3>Dependencies</h3>
 
-          <p>The proposed adopted draft for the Solid Protocol has a number of normative dependencies with a maturity level insufficient for a recommendation (Community Group reports, Editor's Drafts). The Working Group will need to decide how to deal with these dependencies in order to allow the Solid Protocol v1.0 to progress on the Recommendation track. This may include downgrading those dependencies to non-normative references, specifying the required parts in the Solid Protocol itself, or relying on other specifications to fulfil the same purpose.</p>
+          <p>The proposed adopted draft for the PUMPKIN Protocol has a number of normative dependencies with a maturity level insufficient for a recommendation (Community Group reports, Editor's Drafts). The Working Group will need to decide how to deal with these dependencies in order to allow the PUMPKIN Protocol v1.0 to progress on the Recommendation track. This may include downgrading those dependencies to non-normative references, specifying the required parts in the PUMPKIN Protocol itself, or relying on other specifications to fulfill the same purpose.</p>
 
           <p>Depending on the Working Group progress, including consideration for <a href="https://www.w3.org/Consortium/Process/#adequate-implementation">
           adequate implementation experience</a>, the Group may also decide to adopt the following dependencies as input documents:</p>
@@ -298,7 +301,7 @@
             If additional in-scope Recommendation-track deliverables need to be added to the Charter before the Charter expires, the Working Group will propose an updated Charter that differs only in deliverables.
           </p>
           <p>
-           The Working Group will adopt proposals that fulfill the requirements of <a href="https://www.w3.org/Guide/standards-track/#criteria">W3C Recommendation Track Readiness</a>. In particular, the Working Group will only adopt proposals it deems sufficiently mature. Proposals can be made to the Working Group through the <a href="https://www.w3.org/groups/cg/solid">W3C Solid Community Group</a> or another similar incubation phase.
+           The Working Group will adopt proposals that fulfill the requirements of <a href="https://www.w3.org/Guide/standards-track/#criteria">W3C Recommendation Track Readiness</a>. In particular, the Working Group will only adopt proposals it deems sufficiently mature. Proposals can be made to the Working Group through <a href="https://www.w3.org/groups/cg/">W3C Community Groups</a> or another similar incubation phase.
           </p>
         </section>
 
@@ -313,15 +316,14 @@
                     <dt id="test-suite" class="spec">Test Suite and Implementation Report</dt>
                     <dd>
                         <p>
-                            The Working Group will develop a test suite and implementation report to test and document conformance levels achieved by implementors.
+                            The Working Group will develop a test suite and implementation report to test and document conformance levels achieved by implementers.
                         </p>
                     </dd>
                 </dl>
         </section>
 
         <section id="timeline">
-          <h3>Timeline</h3>
-
+          <h3>Timeline</h3>d
                 <table class="roadmap">
                     <thead>
                         <tr>
@@ -348,7 +350,7 @@
                         </tr>
                         <tr>
                             <th rowspan="1" colspan="1">
-                                Solid Protocol
+                                PUMPKIN Protocol
                             </th>
                             <td class="WD1" rowspan="1" colspan="1">
                                 <i class="todo">START + 6M</i>
@@ -381,7 +383,7 @@ more implementations interoperating with each other. In order to advance to
 Proposed Recommendation, each normative specification must have an open
 test suite of every feature defined in the specification.</p>
 	  <p>There should be testing plans for each specification, starting from the earliest drafts.</p>
-    <p>To promote interoperability, the group will publish <a href="https://solidproject.org/ED/qa">Solid QA</a> detailing testing policy, processes, and procedures.</p>
+    <p>To promote interoperability, the group will document a testing policy, processes, and procedures, taking <a href="https://solidproject.org/ED/qa">Solid QA</a> as an input.</p>
 
     <!-- Horizontal review -->
     <p>Each specification should contain sections detailing all known security and privacy implications for implementers, web authors, and end users.</p>
@@ -412,19 +414,19 @@ test suite of every feature defined in the specification.</p>
           <h3 id="w3c-coordination">W3C Groups</h3>
           <dl>
             <dt><a href="https://www.w3.org/groups/cg/credentials">Credentials Community Group</a></dt>
-            <dd>To explore and report on the application of creating, storing, presenting, verifying, and user control of credentials in the context of Solid Protocol.</dd>
+            <dd>To explore and report on the application of creating, storing, presenting, verifying, and user control of credentials in the context of PUMPKIN Protocol.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/did">Decentralized Identifier Working Group</a></dt>
-            <dd>To investigate the areas in which existing DIDs can be adopted by the Solid Protocol (and related technical reports), as well as to advance an understanding of whether a Solid-specific DID method is needed.</dd>
+            <dd>To investigate the areas in which existing DIDs can be adopted by the PUMPKIN Protocol (and related technical reports), as well as to advance an understanding of whether a specific DID method is needed.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/ldpnext">LDP Next Community Group</a></dt>
-            <dd>To transfer applicable design decisions and implementation experience towards the Solid Protocol, and report back on components that can be adopted.</dd>
+            <dd>To transfer applicable design decisions and implementation experience towards the PUMKIN Protocol, and report back on components that can be adopted.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/n3-dev">Notation 3 (N3) Community Group</a></dt>
-            <dd>To investigate the possibility of transferring Solid Protocol's N3 Patch to the N3 CG where its standardisation development can continue with broader applicability.</dd>
+            <dd>To investigate the possibility of transferring PUMKIN Protocol's N3 Patch to the N3 CG where its standardization development can continue with broader applicability.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/rdf-star">RDF-star Working Group</a></dt>
-            <dd>To reuse and report on recent extensions to RDF and SPARQL that can be incorporated with upstream specifications like the Solid Protocol.</dd>
+            <dd>To reuse and report on recent extensions to RDF and SPARQL that can be incorporated with upstream specifications like the PUMPKIN Protocol.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/socialcg">Social Web Incubator Community Group</a></dt>
             <dd>To continue with the development of a shared understanding between Linked Data(-compatible) specifications and their reuse, e.g., ActivityPub, AS2, LDN.</dd>
@@ -433,22 +435,22 @@ test suite of every feature defined in the specification.</p>
             <dd>To maintain a separation of goals and transfer of incubated work items.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/unhosted">Unhosted Web Community Group</a></dt>
-            <dd>To explore the overlaps (CORS, user-centric storage, JSON-LD container descriptions) and differences (OAuth instead of WAC/ACP) between the Solid Protocol draft and their work on <a href="https://datatracker.ietf.org/doc/draft-dejong-remotestorage/">remoteStorage</a>.</dd>
+            <dd>To explore the overlaps (CORS, user-centric storage, JSON-LD container descriptions) and differences (OAuth instead of WAC/ACP) between the PUMPKIN Protocol draft and their work on <a href="https://datatracker.ietf.org/doc/draft-dejong-remotestorage/">remoteStorage</a>.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/vc">Verifiable Credentials Working Group</a></dt>
-            <dd>To inquire on the suitability of credentials data models and serializations, and their potential integration with the Solid Protocol.</dd>
+            <dd>To inquire on the suitability of credentials data models and serializations, and their potential integration with the PUMPKIN Protocol.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/webid">WebID Community Group</a></dt>
-            <dd>To provide integration feedback on the use of WebIDs in Solid Protocol (and related technical reports) in order to stabilise the fundamental notions and behaviors.</dd>
+            <dd>To provide integration feedback on the use of WebIDs in PUMPKIN Protocol (and related technical reports) in order to stabilize the fundamental notions and behaviors.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/webauthn">Web Authentication Working Group</a></dt>
-            <dd>To ensure that Web Authentication primitives align with Solid principles and aims, as well as investigate areas to bridge with the WebAuthn API to improve user's privacy and consent.</dd>
+            <dd>To ensure that Web Authentication primitives align with PUMPKIN principles and aims, as well as investigate areas to bridge with the WebAuthn API to improve user's privacy and consent.</dd>
 
             <dt><a href="https://www.w3.org/groups/cg/wicg">Web Platform Incubator Community Group</a></dt>
-            <dd>To further develop a mutual understanding of how the federated credential management API and Solid OIDC can align better.</dd>
+            <dd>To further develop a mutual understanding of how the federated credential management API and PUMPKIN can align better.</dd>
 
             <dt><a href="https://www.w3.org/groups/wg/wot">Web of Things Working Group</a></dt>
-            <dd>To investigate the suitability of Solid Protocol in the context of IoT platforms and application domains, and ways to improve their integration.</dd>
+            <dd>To investigate the suitability of PUMPKIN Protocol in the context of IoT platforms and application domains, and ways to improve their integration.</dd>
           </dl>
         </section>
 
@@ -456,7 +458,7 @@ test suite of every feature defined in the specification.</p>
           <h3 id="external-coordination">External Organizations</h3>
           <dl>
             <dt><a href="https://httpwg.org/">IETF HTTP Working Group</a></dt>
-            <dd>To ensure that the Solid Protocol is following best practices, in particular <a href="https://httpwg.org/specs/rfc9205.html">BCP 56: Building Protocols with HTTP</a>.</dd>
+            <dd>To ensure that the PUMPKIN Protocol is following best practices, in particular <a href="https://httpwg.org/specs/rfc9205.html">BCP 56: Building Protocols with HTTP</a>.</dd>
             <dt><a href="https://openid.net/wg/connect/">OpenID Connect Work Group</a></dt>
             <dd>Coordination on specifications related to OpenID Connect (OIDC).</dd>
           </dl>
@@ -470,7 +472,7 @@ test suite of every feature defined in the specification.</p>
           Participation
         </h2>
         <p>
-          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementors of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
+          To be successful, this Working Group is expected to have 6 or more active participants for its duration, including representatives from the key implementers of this specification, and active Editors and Test Leads for each specification. The Chairs, specification Editors, and Test Leads are expected to contribute half of a working day per week towards the Working Group. There is no minimum requirement for other Participants.
         </p>
         <p>
           The group encourages questions, comments and issues on its public mailing lists and document repositories, as described in <a href='#communication'>Communication</a>.
@@ -493,10 +495,10 @@ test suite of every feature defined in the specification.</p>
         The meetings themselves are not open to public participation, however.
         </p>
         <p>
-          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a class="todo" href="">Solid Working Group home page (LINK TBD).</a>
+          Information about the group (including details about deliverables, issues, actions, status, participants, and meetings) will be available from the <a class="todo" href="">PUMPKIN Working Group home page (LINK TBD).</a>
         </p>
         <p>
-          Most Solid Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
+          Most PUMPKIN Working Group teleconferences will focus on discussion of particular specifications, and will be conducted on an as-needed basis.
         </p>
         <p>
           This group primarily conducts its technical work: on the public mailing list <a class="todo" id="public-name" href="mailto:public-solid-wg@w3.org">public-solid-wg@w3.org (LINK TBD)</a> (<a class="todo" href="https://lists.w3.org/Archives/Public/public-solid-wg/">archive (LINK TBD)</a>)
