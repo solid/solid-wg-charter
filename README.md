@@ -1,3 +1,7 @@
+⚠️ The Working Group has now been chartered. See: https://www.w3.org/2024/09/linked-web-storage-wg-charter.html.
+
+If you have any question about this repository, please contact solid@theodi.org.
+
 # Solid Working Group Charter
 
 This repository contains the [proposed charter](https://solid.github.io/solid-wg-charter/charter/) for the Solid Working Group.
