@@ -1,6 +1,6 @@
-⚠️ The Working Group has now been chartered. See: https://www.w3.org/2024/09/linked-web-storage-wg-charter.html.
+⚠️ The Linked Web Storage Working Group has now been chartered. See: https://www.w3.org/2024/09/linked-web-storage-wg-charter.html.
 
-If you have any question about this repository, please contact solid@theodi.org.
+Further information may be obtained via the LWS Working Group Mailing List [public-lws-wg@w3.org](), the Solid Community Group [public-solid@w3.org]() or the Solid GitHub org's steward [solid@theodi.org]().
 
 # Solid Working Group Charter
 
