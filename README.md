@@ -1,3 +1,9 @@
+⚠️ The Linked Web Storage Working Group has now been chartered. See: https://www.w3.org/2024/09/linked-web-storage-wg-charter.html.
+
+Questions about the LWS WG can be directed to [public-lws-wg@w3.org](public-lws-wg@w3.org), the Solid Community Group to [public-solid@w3.org](public-solid@w3.org).
+
+The Open Data Institute [stewards the Solid Project](https://theodi.org/news-and-events/news/odi-and-solid-come-together-to-give-individuals-greater-control-over-personal-data/), including [codebases under the Solid GitHub organisation](https://github.com/solid). The ODI can be contacted at [solid@theodi.org](solid@theodi.org).
+
 # Solid Working Group Charter
 
 This repository contains the [proposed charter](https://solid.github.io/solid-wg-charter/charter/) for the Solid Working Group.
